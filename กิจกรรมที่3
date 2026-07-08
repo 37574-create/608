@@ -1,0 +1,25 @@
+<?php
+
+// แปลง Celsius เป็น Fahrenheit 5 ครั้ง
+for ($i = 1; $i <= 5; $i++) {
+
+    echo "Enter Celsius: ";
+
+    $c = trim(fgets(STDIN));
+
+    $f = ($c * 1.8) + 32;
+
+    echo "Fahrenheit = " . number_format($f, 2) . "\n\n";
+}
+
+// แสดงเลขคู่ 2 ถึง 20 ด้วย Do While
+$num = 2;
+
+echo "Even numbers from 2 to 20:\n";
+
+do {
+    echo $num . " ";
+    $num += 2;
+} while ($num <= 20);
+
+?>
